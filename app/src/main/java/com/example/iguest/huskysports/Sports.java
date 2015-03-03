@@ -6,23 +6,33 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 
-
-public class MainActivity extends ActionBarActivity {
+public class Sports extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sports);
 
-        Button b = (Button) findViewById(R.id.button);
+        final ListView listView = (ListView) findViewById(R.id.listView);
 
-        b.setOnClickListener(new View.OnClickListener() {
+        String[] names = {"Baseball", "Football", "Basketball"};
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_list_item_1, android.R.id.text1, names);
+
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Sports.class));
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent nextActivity = new Intent(Sports.this, Sports.class);
+                nextActivity.putExtra("name", listView.getItemAtPosition(position).toString());
+                startActivity(nextActivity);
             }
         });
     }
@@ -31,7 +41,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_sports, menu);
         return true;
     }
 
