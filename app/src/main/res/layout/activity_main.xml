@@ -31,9 +31,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
+        android:layout_marginTop="105dp"
+        android:src="@drawable/uw"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="83dp"
-        android:src="@drawable/uw"/>
+        />
 
 </RelativeLayout>
