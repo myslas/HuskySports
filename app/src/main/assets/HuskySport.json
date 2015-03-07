@@ -1,0 +1,176 @@
+[
+    {
+        "sport": "Basketball",
+        "roster": [
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            },  
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            },
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            }, 
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            }, 
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            } 
+        ],
+        "schedule": [
+            {
+                "date": "",
+                "location": "",
+                "opponent": "",
+                "time": "",
+                "results": ""
+            },
+            {
+                "date": "",
+                "location": "",
+                "opponent": "",
+                "time": "",
+                "results": ""
+            },
+            {
+                "date": "",
+                "location": "",
+                "opponent": "",
+                "time": "",
+                "results": ""
+            }
+        ]
+    },
+    {
+        "sport": "Football",
+        "roster": [
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            },
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            }, 
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            }, 
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            }, 
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            }
+        ],
+        "schedule": [
+            {
+                "date": "",
+                "location": "",
+                "opponent": "",
+                "time": "",
+                "results": ""
+            },
+            {
+                "date": "",
+                "location": "",
+                "opponent": "",
+                "time": "",
+                "results": ""
+            },
+            {
+                "date": "",
+                "location": "",
+                "opponent": "",
+                "time": "",
+                "results": ""
+            }
+        ]
+    },
+    {
+        "sport": "Baseball",
+        "roster": [
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            },
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            }, 
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            }, 
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            }, 
+            {
+                "student": "Michael Yslas",
+                "postion": "C",
+                "number": 23,
+                "height": "5'6"
+            }
+        ],
+        "schedule": [
+            {
+                "date": "",
+                "location": "",
+                "opponent": "",
+                "time": "",
+                "results": ""
+            },
+            {
+                "date": "",
+                "location": "",
+                "opponent": "",
+                "time": "",
+                "results": ""
+            },
+            {
+                "date": "",
+                "location": "",
+                "opponent": "",
+                "time": "",
+                "results": ""
+            }
+        ]
+    }
+]
