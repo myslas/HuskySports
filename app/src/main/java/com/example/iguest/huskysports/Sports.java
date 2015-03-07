@@ -30,7 +30,7 @@ public class Sports extends ActionBarActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent nextActivity = new Intent(Sports.this, Sports.class);
+                Intent nextActivity = new Intent(Sports.this, Sport.class);
                 nextActivity.putExtra("name", listView.getItemAtPosition(position).toString());
                 startActivity(nextActivity);
             }
@@ -55,6 +55,11 @@ public class Sports extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+
+        if (id == R.id.preferences) {
+            Intent nextActivity = new Intent(Sports.this, Preferences.class);
+            startActivity(nextActivity);
         }
 
         return super.onOptionsItemSelected(item);
