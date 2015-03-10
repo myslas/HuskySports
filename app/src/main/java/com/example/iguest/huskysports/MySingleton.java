@@ -125,54 +125,9 @@ public class MySingleton implements SportsRepository {
                 UWsportss.add(uw);
             }
             reader.endArray();
-            /*int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-
-            json = new String(buffer, "UTF-8");
-            JSONObject obj = new JSONObject(json);
-            JSONObject baseball = obj.getJSONObject("Baseball");
-            Log.i("MySingleton.java", "" + baseball);
-            UWsports mathematics = loadRoster(baseball);
-            JSONObject basketball = obj.getJSONObject("Basketball");
-            UWsports physicsUWsports = loadRoster(basketball);
-            JSONObject football = obj.getJSONObject("Football");
-            UWsports marvelUWsports = loadRoster(football);
-            UWsportss.add(mathematics);
-            UWsportss.add(physicsUWsports);
-            UWsportss.add(marvelUWsports);*/
         } catch (Exception e) {
             e.printStackTrace();
         }
         return UWsportss;
-    }
-
-    private UWsports loadRoster(JSONObject UWsports){
-        UWsports general = new UWsports();
-        try {
-            ArrayList<Roster>  r1 = new ArrayList<Roster>();
-            JSONArray Roster = UWsports.getJSONArray("roster");
-            String sport = UWsports.getString("sport");
-            for (int i = 0; i < Roster.length(); i++) {
-                JSONObject c = Roster.getJSONObject(i);
-                Roster r = new Roster();
-                String name = c.getString("name");
-                String position = c.getString("position");
-                String number = c.getString("number");
-                String height = c.getString("height");
-                r.setName(name);
-                r.setPosition(position);
-                r.setNumber(number);
-                r.setHeight(height);
-                r1.add(r);
-            }
-            general.setSportName(sport);
-            general.setRoster(r1);
-        }
-        catch (JSONException x) {
-            x.printStackTrace();
-        }
-        return general;
     }
 }
