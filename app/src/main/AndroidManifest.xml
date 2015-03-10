@@ -30,7 +30,7 @@
             android:label="@string/title_activity_sport" >
         </activity>
         <activity
-            android:name=".Schedule"
+            android:name=".ScheduleActivity"
             android:label="@string/title_activity_schedule" >
         </activity>
     </application>

@@ -21,6 +21,8 @@ public class UWsports implements Serializable {
         return roster;
     }
 
+    public ArrayList<Schedule> getSchedule() {return schedule; }
+
     public void setSportName(String title) {
         this.sportName = title;
     }
@@ -28,6 +30,8 @@ public class UWsports implements Serializable {
     public void setRoster(ArrayList<Roster> r) {
         this.roster = r;
     }
+
+    public void setSchedule(ArrayList<Schedule> s) {this.schedule = s; }
 
 
 }

@@ -4,7 +4,7 @@ package com.example.iguest.huskysports;
 public class Roster {
     public String name;
     public String position;
-    public int number;
+    public String number;
     public String height;
 
     public Roster() {
@@ -19,7 +19,7 @@ public class Roster {
         return position;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
@@ -35,7 +35,7 @@ public class Roster {
         position = s;
     }
 
-    public void setNumber(int n) {
+    public void setNumber(String n) {
         number = n;
     }
 

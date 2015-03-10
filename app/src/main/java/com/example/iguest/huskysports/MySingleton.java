@@ -1,7 +1,10 @@
 package com.example.iguest.huskysports;
 
 
+import android.content.Context;
 import android.os.Environment;
+import android.util.JsonReader;
+import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -10,6 +13,7 @@ import org.json.JSONObject;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,17 +49,83 @@ public class MySingleton implements SportsRepository {
     }
 
     @Override
-    public ArrayList<UWsports> getElements() {
+    public ArrayList<UWsports> getElements(Context context) {
 
         ArrayList<UWsports> UWsportss = new ArrayList<UWsports>();
         File path = Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_DOWNLOADS);
-        File file = new File(path, "Rosterdata.json");
+        File file = new File(path, "HuskySport.json");
 
         try {
             String json = "";
-            InputStream is = new FileInputStream(file);
-            int size = is.available();
+            InputStream is = context.getAssets().open("HuskySport.json");
+            JsonReader reader = new JsonReader(new InputStreamReader(is, "UTF-8"));
+            reader.beginArray();
+            while(reader.hasNext()) {
+                UWsports uw = new UWsports();
+                reader.beginObject();
+                while(reader.hasNext()) {
+                    String temp = reader.nextName();
+                    if (temp.equals("sport")) {
+                        uw.setSportName(reader.nextString());
+                    }
+                    if (temp.equals("roster")) {
+                        ArrayList<Roster> roster = new ArrayList<Roster>();
+                        reader.beginArray();
+                        while (reader.hasNext()) {
+                            Roster r = new Roster();
+                            reader.beginObject();
+                            while(reader.hasNext()) {
+                                String next = reader.nextName();
+                                if (next.equals("student")) {
+                                    r.setName(reader.nextString());
+                                } else if (next.equals("position")) {
+                                    r.setPosition(reader.nextString());
+                                } else if (next.equals("number")) {
+                                    r.setNumber(reader.nextString());
+                                } else {
+                                    r.setHeight(reader.nextString());
+                                }
+                            }
+                            reader.endObject();
+                            roster.add(r);
+                        }
+                        uw.setRoster(roster);
+                        reader.endArray();
+
+                    }
+                    if (temp.equals("schedule")) {
+                        ArrayList<Schedule> schedules = new ArrayList<Schedule>();
+                        reader.beginArray();
+                        while(reader.hasNext()) {
+                            Schedule s = new Schedule();
+                            reader.beginObject();
+                            while (reader.hasNext()) {
+                                String next = reader.nextName();
+                                if (next.equals("date")) {
+                                    s.setDate(reader.nextString());
+                                } else if (next.equals("location")) {
+                                    s.setLocation(reader.nextString());
+                                } else if (next.equals("opponent")) {
+                                    s.setOpponent(reader.nextString());
+                                } else if (next.equals("results")) {
+                                    s.setResults(reader.nextString());
+                                } else {
+                                    s.setTime(reader.nextString());
+                                }
+                            }
+                            reader.endObject();
+                            schedules.add(s);
+                        }
+                        reader.endArray();
+                        uw.setSchedule(schedules);
+                    }
+                }
+                reader.endObject();
+                UWsportss.add(uw);
+            }
+            reader.endArray();
+            /*int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
             is.close();
@@ -63,6 +133,7 @@ public class MySingleton implements SportsRepository {
             json = new String(buffer, "UTF-8");
             JSONObject obj = new JSONObject(json);
             JSONObject baseball = obj.getJSONObject("Baseball");
+            Log.i("MySingleton.java", "" + baseball);
             UWsports mathematics = loadRoster(baseball);
             JSONObject basketball = obj.getJSONObject("Basketball");
             UWsports physicsUWsports = loadRoster(basketball);
@@ -70,7 +141,7 @@ public class MySingleton implements SportsRepository {
             UWsports marvelUWsports = loadRoster(football);
             UWsportss.add(mathematics);
             UWsportss.add(physicsUWsports);
-            UWsportss.add(marvelUWsports);
+            UWsportss.add(marvelUWsports);*/
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -86,10 +157,10 @@ public class MySingleton implements SportsRepository {
             for (int i = 0; i < Roster.length(); i++) {
                 JSONObject c = Roster.getJSONObject(i);
                 Roster r = new Roster();
-                String name = UWsports.getString("name");
-                String position = UWsports.getString("position");
-                int number = UWsports.getInt("number");
-                String height = UWsports.getString("height");
+                String name = c.getString("name");
+                String position = c.getString("position");
+                String number = c.getString("number");
+                String height = c.getString("height");
                 r.setName(name);
                 r.setPosition(position);
                 r.setNumber(number);

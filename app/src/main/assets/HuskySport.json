@@ -4,57 +4,57 @@
         "roster": [
             {
                 "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
-                "height": "5'6"
-            },  
-            {
-                "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
+                "position": "C",
+                "number": "#23",
                 "height": "5'6"
             },
             {
-                "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
+                "student": "Tuvshin Tulga",
+                "position": "C",
+                "number": "#23",
                 "height": "5'6"
-            }, 
+            },
             {
-                "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
+                "student": "Kevin Yang",
+                "position": "C",
+                "number": "#23",
                 "height": "5'6"
-            }, 
+            },
             {
-                "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
+                "student": "Michael Jordan",
+                "position": "C",
+                "number": "#23",
                 "height": "5'6"
-            } 
+            },
+            {
+                "student": "Lebron James",
+                "position": "C",
+                "number": "#23",
+                "height": "5'6"
+            }
         ],
         "schedule": [
             {
-                "date": "",
-                "location": "",
-                "opponent": "",
-                "time": "",
-                "results": ""
+                "date": "3/3/19",
+                "location": "Home",
+                "opponent": "Oregon",
+                "time": "7:00",
+                "results": "45-0"
             },
             {
-                "date": "",
-                "location": "",
-                "opponent": "",
-                "time": "",
-                "results": ""
+                "date": "3/3/19",
+                "location": "Home",
+                "opponent": "Oregon",
+                "time": "7:00",
+                "results": "45-0"
             },
             {
-                "date": "",
-                "location": "",
-                "opponent": "",
-                "time": "",
-                "results": ""
-            }
+                "date": "3/3/19",
+                "location": "Home",
+                "opponent": "Oregon",
+                "time": "7:00",
+                "results": "45-0"
+}
         ]
     },
     {
@@ -62,56 +62,56 @@
         "roster": [
             {
                 "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
+                "position": "WR",
+                "number": "#23",
+                "height": "5'6"
+            },
+            {
+                "student": "Russel Wilson",
+                "position": "QB",
+                "number": "#23",
+                "height": "5'6"
+            },
+            {
+                "student": "Richard Sherman",
+                "position": "CB",
+                "number": "#33",
+                "height": "6'6"
+            },
+            {
+                "student": "Michael Yslas",
+                "position": "C",
+                "number": "#23",
                 "height": "5'6"
             },
             {
                 "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
-                "height": "5'6"
-            }, 
-            {
-                "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
-                "height": "5'6"
-            }, 
-            {
-                "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
-                "height": "5'6"
-            }, 
-            {
-                "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
+                "position": "C",
+                "number": "#23",
                 "height": "5'6"
             }
         ],
         "schedule": [
             {
-                "date": "",
-                "location": "",
-                "opponent": "",
-                "time": "",
-                "results": ""
+                "date": "3/3/19",
+                "location": "Home",
+                "opponent": "Oregon",
+                "time": "7:00",
+                "results": "45-0"
             },
             {
-                "date": "",
-                "location": "",
-                "opponent": "",
-                "time": "",
-                "results": ""
+                "date": "3/3/19",
+                "location": "Home",
+                "opponent": "Oregon",
+                "time": "7:00",
+                "results": "45-0"
             },
             {
-                "date": "",
-                "location": "",
-                "opponent": "",
-                "time": "",
-                "results": ""
+                "date": "3/3/19",
+                "location": "Home",
+                "opponent": "Oregon",
+                "time": "7:00",
+                "results": "45-0"
             }
         ]
     },
@@ -120,56 +120,56 @@
         "roster": [
             {
                 "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
+                "position": "LF",
+                "number": "#1",
+                "height": "5'6"
+            },
+            {
+                "student": "Robinson Cano ",
+                "position": "2B",
+                "number": "#22",
+                "height": "5'10"
+            },
+            {
+                "student": "Felix Hernandez",
+                "position": "SP",
+                "number": "#34",
                 "height": "5'6"
             },
             {
                 "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
+                "position": "C",
+                "number": "#23",
                 "height": "5'6"
-            }, 
+            },
             {
                 "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
-                "height": "5'6"
-            }, 
-            {
-                "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
-                "height": "5'6"
-            }, 
-            {
-                "student": "Michael Yslas",
-                "postion": "C",
-                "number": 23,
+                "position": "C",
+                "number": "#23",
                 "height": "5'6"
             }
         ],
         "schedule": [
             {
-                "date": "",
-                "location": "",
-                "opponent": "",
-                "time": "",
-                "results": ""
+                "date": "3/3/19",
+                "location": "Home",
+                "opponent": "Oregon",
+                "time": "7:00",
+                "results": "45-0"
             },
             {
-                "date": "",
-                "location": "",
-                "opponent": "",
-                "time": "",
-                "results": ""
+                "date": "3/3/19",
+                "location": "Home",
+                "opponent": "Oregon",
+                "time": "7:00",
+                "results": "45-0"
             },
             {
-                "date": "",
-                "location": "",
-                "opponent": "",
-                "time": "",
-                "results": ""
+                "date": "3/3/19",
+                "location": "Home",
+                "opponent": "Oregon",
+                "time": "7:00",
+                "results": "45-0"
             }
         ]
     }

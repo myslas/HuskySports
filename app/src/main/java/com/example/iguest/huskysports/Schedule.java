@@ -1,39 +1,54 @@
 package com.example.iguest.huskysports;
 
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
+public class Schedule {
+    private String date;
+    private String location;
+    private String opponent;
+    private String time;
+    private String results;
 
-public class Schedule extends ActionBarActivity {
+    public Schedule() {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_schedule);
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_schedule, menu);
-        return true;
+    public void setDate(String date) {
+        this.date = date;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+    public void setLocation(String location) {
+        this.location = location;
+    }
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+    public void setOpponent(String opponent) {
+        this.opponent = opponent;
+    }
 
-        return super.onOptionsItemSelected(item);
+    public void setResults(String results) {
+        this.results = results;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public String getOpponent() {
+        return opponent;
+    }
+
+    public String getResults() {
+        return results;
+    }
+
+    public String getTime() {
+        return time;
     }
 }

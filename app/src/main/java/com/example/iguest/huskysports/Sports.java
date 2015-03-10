@@ -22,7 +22,7 @@ public class Sports extends ActionBarActivity {
 
         String[] names = {"Baseball", "Football", "Basketball"};
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, names);
 
         listView.setAdapter(adapter);

@@ -17,14 +17,14 @@ public class SportApp extends Application {
     public void onCreate() {
         super.onCreate();
 
-        Log.i("QuizApp", "App is running");
+        Log.i("SportApp", "App is running");
         File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
         File file = new File(path, "HuskySport.json");
 
         if(!file.exists()) {
             try{
                 AssetManager am = getAssets();
-                InputStream inputStream = am.open("quizdata.json");
+                InputStream inputStream = am.open("HuskySport.json");
                 File local = createFileFromInputStream(path, inputStream);
                 // Log.i("json", "not in: " + local.toString() + " ");
             } catch(Exception e){
