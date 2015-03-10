@@ -54,11 +54,14 @@ public class MySingleton implements SportsRepository {
         ArrayList<UWsports> UWsportss = new ArrayList<UWsports>();
         File path = Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_DOWNLOADS);
-        File file = new File(path, "HuskySport.json");
+        File file = new File(path, "update2.json");
 
         try {
             String json = "";
             InputStream is = context.getAssets().open("HuskySport.json");
+            if (file.exists()){
+                is = new FileInputStream(file);
+            }
             JsonReader reader = new JsonReader(new InputStreamReader(is, "UTF-8"));
             reader.beginArray();
             while(reader.hasNext()) {

@@ -24,6 +24,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
+import java.io.File;
+
 
 public class Preferences extends ActionBarActivity {
 
@@ -86,10 +88,18 @@ public class Preferences extends ActionBarActivity {
                 request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI
                         | DownloadManager.Request.NETWORK_MOBILE)
                         .setAllowedOverRoaming(false)
-                        .setTitle("testHuskysport2.json")
+                        .setTitle("update2.json")
                         .setDescription("Quiz Data for application")
                         .setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,
-                                "testhuskysport2.json");
+                                "update2.json");
+
+                File path = Environment.getExternalStoragePublicDirectory(
+                        Environment.DIRECTORY_DOWNLOADS);
+                File file = new File(path, "update2.json");
+
+                if (file.exists()){
+                    file.delete();
+                }
 
 
                 long download_id = dm.enqueue(request);
@@ -143,7 +153,7 @@ public class Preferences extends ActionBarActivity {
 
 
                 Toast.makeText(getApplicationContext(),
-                        "Please restart the application to see the updated the data!",
+                        "Data is updated!",
                         Toast.LENGTH_LONG).show();
         }
 
