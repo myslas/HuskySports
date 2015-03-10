@@ -84,13 +84,15 @@ public class Preferences extends ActionBarActivity {
             try{
                 dm = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
                 DownloadManager.Request request = new DownloadManager.Request(Uri.parse("http://students.washington.edu/kyang126/Info498MobileDev/HuskySport.json"));
+                String name = Environment.getExternalStorageDirectory().getAbsolutePath();
 
+                name += "/YourDirectoryName/" ;
                 request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI
                         | DownloadManager.Request.NETWORK_MOBILE)
                         .setAllowedOverRoaming(false)
                         .setTitle("update2.json")
                         .setDescription("Quiz Data for application")
-                        .setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,
+                        .setDestinationInExternalPublicDir(name,
                                 "update2.json");
 
                 File path = Environment.getExternalStoragePublicDirectory(
