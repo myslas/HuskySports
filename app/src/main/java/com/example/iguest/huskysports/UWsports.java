@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 public class UWsports implements Serializable {
     private String sportName;
+    private String record;
     private ArrayList<Roster> roster;
     private ArrayList schedule;
 
@@ -16,6 +17,8 @@ public class UWsports implements Serializable {
     public String getSportName() {
         return sportName;
     }
+
+    public String getRecord() { return  record; }
 
     public ArrayList<Roster> getRoster() {
         return roster;
@@ -32,6 +35,8 @@ public class UWsports implements Serializable {
     }
 
     public void setSchedule(ArrayList<Schedule> s) {this.schedule = s; }
+
+    public void setRecord(String s) { this.record = s; }
 
 
 }

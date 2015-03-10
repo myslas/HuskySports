@@ -41,13 +41,17 @@ public class ScheduleActivity extends ActionBarActivity {
                 startActivity(nextActivity);
             }
         });
+        TextView record = (TextView) findViewById(R.id.Record);
         final ArrayList<UWsports> uwsports = MySingleton.getInstance().getElements(getApplication().getApplicationContext());
         if (name.equals("Baseball")) {
             schedule = uwsports.get(2).getSchedule();
+            record.setText("Record: " + uwsports.get(2).getRecord());
         } else if (name.equals("Basketball")) {
             schedule = uwsports.get(0).getSchedule();
+            record.setText("Record: " + uwsports.get(0).getRecord());
         } else {
             schedule = uwsports.get(1).getSchedule();
+            record.setText("Record: " + uwsports.get(1).getRecord());
         }
 
 

@@ -6,6 +6,7 @@ public class Roster {
     public String position;
     public String number;
     public String height;
+    public String picURL;
 
     public Roster() {
 
@@ -27,6 +28,8 @@ public class Roster {
         return height;
     }
 
+    public String getPicURL() { return picURL; }
+
     public void setName(String s) {
         name = s;
     }
@@ -42,4 +45,6 @@ public class Roster {
     public void setHeight(String s) {
         height = s;
     }
+
+    public void setPicURL(String s) { picURL = s; }
 }

@@ -69,6 +69,9 @@ public class MySingleton implements SportsRepository {
                     if (temp.equals("sport")) {
                         uw.setSportName(reader.nextString());
                     }
+                    if (temp.equals("record")) {
+                        uw.setRecord(reader.nextString());
+                    }
                     if (temp.equals("roster")) {
                         ArrayList<Roster> roster = new ArrayList<Roster>();
                         reader.beginArray();

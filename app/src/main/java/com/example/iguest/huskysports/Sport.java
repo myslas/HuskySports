@@ -47,15 +47,19 @@ public class Sport extends ActionBarActivity {
             }
         });
         sportName.setText(name);
-        ArrayList<Roster> roster;
+        TextView record = (TextView) findViewById(R.id.Record);
+        final ArrayList<Roster> roster;
         final ArrayList<UWsports> uwsports = MySingleton.getInstance().getElements(getApplication().getApplicationContext());
         Log.i(TAG, "" + uwsports);
         if (name.equals("Baseball")) {
             roster = uwsports.get(2).getRoster();
+            record.setText("Record: " + uwsports.get(2).getRecord());
         } else if (name.equals("Basketball")) {
             roster = uwsports.get(0).getRoster();
+            record.setText("Record: " + uwsports.get(0).getRecord());
         } else {
             roster = uwsports.get(1).getRoster();
+            record.setText("Record: " + uwsports.get(1).getRecord());
         }
 
 
@@ -86,6 +90,19 @@ public class Sport extends ActionBarActivity {
 
         myList = (ListView)findViewById(R.id.listView2);
         myList.setAdapter(adapter);
+
+        myList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent nextActivity = new Intent(Sport.this, Player.class);
+                nextActivity.putExtra("sport", name);
+                nextActivity.putExtra("name", roster.get(position).getName());
+                nextActivity.putExtra("position", roster.get(position).getPosition());
+                nextActivity.putExtra("number", roster.get(position).getNumber());
+                nextActivity.putExtra("height", roster.get(position).getHeight());
+                startActivity(nextActivity);
+            }
+        });
 
 
     }

@@ -9,5 +9,6 @@
     <string name="title_activity_preferences">Preferences</string>
     <string name="title_activity_sport">Sport</string>
     <string name="title_activity_schedule">Schedule</string>
+    <string name="title_activity_player">Player</string>
 
 </resources>

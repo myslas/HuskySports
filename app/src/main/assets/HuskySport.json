@@ -1,12 +1,13 @@
 [
     {
         "sport": "Basketball",
+        "record": "16-12",
         "roster": [
             {
-                "student": "Michael Yslas",
-                "position": "C",
-                "number": "#23",
-                "height": "5'6"
+                "student": "Mike Anderson",
+                "position": "Guard",
+                "number": "#11",
+                "height": "6'4"
             },
             {
                 "student": "Tuvshin Tulga",
@@ -59,6 +60,7 @@
     },
     {
         "sport": "Football",
+        "record": "8-5",
         "roster": [
             {
                 "student": "Michael Yslas",
@@ -117,6 +119,7 @@
     },
     {
         "sport": "Baseball",
+        "record": "11-5",
         "roster": [
             {
                 "student": "Michael Yslas",
