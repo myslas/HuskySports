@@ -59,9 +59,9 @@ public class MySingleton implements SportsRepository {
         try {
             String json = "";
             InputStream is = context.getAssets().open("HuskySport.json");
-            /*if (file.exists()){
+            if (file.exists()){
                 is = new FileInputStream(file);
-            }*/
+            }
             JsonReader reader = new JsonReader(new InputStreamReader(is, "UTF-8"));
             reader.beginArray();
             while(reader.hasNext()) {

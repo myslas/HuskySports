@@ -123,7 +123,7 @@ public class Preferences extends ActionBarActivity {
                         | DownloadManager.Request.NETWORK_MOBILE)
                         .setAllowedOverRoaming(false)
                         .setTitle("update2.json")
-                        .setDescription("Quiz Data for application")
+                        .setDescription("Sport Data for application")
                         .setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,
                                 "update2.json");
 
