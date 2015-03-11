@@ -84,7 +84,7 @@ public class Preferences extends ActionBarActivity {
             try{
                 dm = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
                 DownloadManager.Request request = new DownloadManager.Request(Uri.parse("http://students.washington.edu/kyang126/Info498MobileDev/HuskySport.json"));
-                String name = Environment.getExternalStorageDirectory().getAbsolutePath();
+                String name = Environment.getRootDirectory().getAbsolutePath();
 
                 name += "/YourDirectoryName/" ;
                 request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI
@@ -92,7 +92,7 @@ public class Preferences extends ActionBarActivity {
                         .setAllowedOverRoaming(false)
                         .setTitle("update2.json")
                         .setDescription("Quiz Data for application")
-                        .setDestinationInExternalPublicDir(name,
+                        .setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS,
                                 "update2.json");
 
                 File path = Environment.getExternalStoragePublicDirectory(
@@ -146,17 +146,19 @@ public class Preferences extends ActionBarActivity {
                 }
 
 
+
+
+
+                Toast.makeText(getApplicationContext(),
+                        "Data is updated!",
+                        Toast.LENGTH_LONG).show();
+
             } catch(Exception e) {
                 e.printStackTrace();
                 Toast.makeText(getApplicationContext(),
                         "Make sure it is a valid URL",
                         Toast.LENGTH_LONG).show();
             }
-
-
-                Toast.makeText(getApplicationContext(),
-                        "Data is updated!",
-                        Toast.LENGTH_LONG).show();
         }
 
         });
@@ -203,7 +205,6 @@ public class Preferences extends ActionBarActivity {
         savePreferences("baseball", baseball.isChecked());
         savePreferences("basketball", basketball.isChecked());
         savePreferences("football", football.isChecked());
-
     }
 
     @Override

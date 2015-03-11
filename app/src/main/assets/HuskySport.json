@@ -1,179 +1,471 @@
 [
     {
-        "sport": "Basketball",
-        "record": "16-12",
-        "roster": [
-            {
-                "student": "Mike J",
-                "position": "Guard",
-                "number": "#11",
-                "height": "6'4"
-            },
-            {
-                "student": "Tuvshin Tulga",
-                "position": "C",
-                "number": "#23",
-                "height": "5'6"
-            },
-            {
-                "student": "Kevin Yang",
-                "position": "C",
-                "number": "#23",
-                "height": "5'6"
-            },
-            {
-                "student": "Michael Jordan",
-                "position": "C",
-                "number": "#23",
-                "height": "5'6"
-            },
-            {
-                "student": "Lebron James",
-                "position": "C",
-                "number": "#23",
-                "height": "5'6"
-            }
-        ],
-        "schedule": [
-            {
-                "date": "3/3/19",
-                "location": "Home",
-                "opponent": "Oregon",
-                "time": "7:00",
-                "results": "45-0"
-            },
-            {
-                "date": "3/3/19",
-                "location": "Home",
-                "opponent": "Oregon",
-                "time": "7:00",
-                "results": "45-0"
-            },
-            {
-                "date": "3/3/19",
-                "location": "Home",
-                "opponent": "Oregon",
-                "time": "7:00",
-                "results": "45-0"
-}
-        ]
-    },
+    "sport": "Basketball",
+    "record": "16-12",
+    "headCoach": "Lorenzo Romar",
+    "roster": [
+        {
+            "student": "Mike Anderson",
+            "position": "G",
+            "number": "#11",
+            "height": "6'4",
+            "year": "Senior"
+        },
+         {
+            "student": "Andrew Anderews",
+            "position": "G",
+            "number": "#12",
+            "height": "6'2",
+            "year": "Junior"
+        },
+         {
+            "student": "Greg Bowman",
+            "position": "F",
+            "number": "#22",
+            "height": "6'5",
+            "year": "Freshman"
+        },
+          {
+            "student": "Gilles Dierickx",
+            "position": "C",
+            "number": "#34",
+            "height": "7'0",
+            "year": "Junior"
+        },
+          {
+            "student": "Donaven Dorsey",
+            "position": "F",
+            "number": "#42",
+            "height": "6'7",
+            "year": "Freshman"
+        },
+          {
+            "student": "KJ Garrett",
+            "position": "G",
+            "number": "#15",
+            "height": "6'3",
+            "year": "Freshman"
+        },  {
+            "student": "Jernard Jerreau",
+            "position": "F",
+            "number": "#21",
+            "height": "6'10",
+            "year": "Freshman"
+        },  {
+            "student": "Darin Johnson",
+            "position": "G",
+            "number": "#1",
+            "height": "6'5",
+            "year": "Sophomore"
+        },  {
+            "student": "Shawn Kemp Jr",
+            "position": "F",
+            "number": "#40",
+            "height": "6'9",
+            "year": "Senior"
+        },  {
+            "student": "Dan Kingma",
+            "position": "G",
+            "number": "#10",
+            "height": "5'10",
+            "year": "Freshman"
+        },  {
+            "student": "Nigel Williams-Goss",
+            "position": "G",
+            "number": "#5",
+            "height": "6'3",
+            "year": "Sophomore"
+        },  {
+            "student": "Quevyn Winters",
+            "position": "G",
+            "number": "#2",
+            "height": "6'5",
+            "year": "Junior"
+        }
+    ],
+    "schedule": [
+        {
+            "date": "11/06/2014",
+            "location": "Home",
+            "opponent": "Saint Martin's",
+            "time": "7:30",
+            "results": "W 88-65"
+        },
+        {
+            "date": "11/14/2014",
+            "location": "Home",
+            "opponent": "South Carolina State",
+            "time": "7:00",
+            "results": "W 77-59"
+        },
+        {
+            "date": "11/21/2014",
+            "location": "Away",
+            "opponent": "Seattle",
+            "time": "7:00",
+            "results": "W 63-48"
+        },
+        {
+            "date": "11/23/2014",
+            "location": "Away",
+            "opponent": "Marv Harshman Classic",
+            "time": "5:00",
+            "results": "W 76-69"
+        },
+        {
+            "date": "11/27/2014",
+            "location": "Away",
+            "opponent": "San Jose State",
+            "time": "8:00",
+            "results": "W 78-56"
+        },
+        {
+            "date": "11/28/2014",
+            "location": "Away",
+            "opponent": "Long Beach State",
+            "time": "8:30",
+            "results": "W 80-70"
+        }
+    ]
+},
     {
         "sport": "Football",
         "record": "8-5",
+        "headCoach": "Chris Petersen",
         "roster": [
             {
-                "student": "Michael Yslas",
+                "student": "David Ajamu",
+                "position": "TE",
+                "number": "#85",
+                "height": "6'8",
+                "year": "Sophomore"
+            },
+            {
+                "student": "Budda Baker",
+                "position": "DB",
+                "number": "#32",
+                "height": "5'10",
+                "year": "Sophomore"
+            },
+            {
+                "student": "Brandon Beaver",
+                "position": "DB",
+                "number": "#9",
+                "height": "6'0",
+                "year": "Junior"
+            },
+            {
+                "student": "Drew Before",
                 "position": "WR",
                 "number": "#23",
-                "height": "5'6"
+                "height": "5'11",
+                "year": "Junior"
             },
             {
-                "student": "Russel Wilson",
+                "student": "Cyler Miles",
                 "position": "QB",
-                "number": "#23",
-                "height": "5'6"
+                "number": "#10",
+                "height": "6'4",
+                "year": "Junior"
             },
             {
-                "student": "Richard Sherman",
-                "position": "CB",
-                "number": "#33",
-                "height": "6'6"
+                "student": "Joshua Perkins",
+                "position": "TE",
+                "number": "#82",
+                "height": "6'4",
+                "year": "Senior"
             },
             {
-                "student": "Michael Yslas",
-                "position": "C",
-                "number": "#23",
-                "height": "5'6"
+                "student": "Dante Pettis",
+                "position": "WR",
+                "number": "#87",
+                "height": "6'0",
+                "year": "Sophomore"
             },
             {
-                "student": "Michael Yslas",
-                "position": "C",
-                "number": "#23",
-                "height": "5'6"
+                "student": "Elijah Qualls",
+                "position": "DL",
+                "number": "#11",
+                "height": "6'1",
+                "year": "Sophomore"
+            },
+            {
+                "student": "Coleman Shelton",
+                "position": "OL",
+                "number": "#79",
+                "height": "6'4",
+                "year": "Sophomore"
+            },
+            {
+                "student": "Dwayne Washington",
+                "position": "TB",
+                "number": "#12",
+                "height": "6'2",
+                "year": "Junior"
             }
         ],
         "schedule": [
             {
-                "date": "3/3/19",
-                "location": "Home",
-                "opponent": "Oregon",
-                "time": "7:00",
-                "results": "45-0"
+                "date": "09/04/2015",
+                "location": "Away",
+                "opponent": "Boise State",
+                "time": "TBA",
+                "results": ""
             },
             {
-                "date": "3/3/19",
+                "date": "09/12/2015",
                 "location": "Home",
-                "opponent": "Oregon",
-                "time": "7:00",
-                "results": "45-0"
+                "opponent": "Sacramento State",
+                "time": "TBA",
+                "results": ""
             },
             {
-                "date": "3/3/19",
+                "date": "09/19/2015",
+                "location": "Home",
+                "opponent": "Utah State",
+                "time": "TBA",
+                "results": ""
+            },
+            {
+                "date": "09/26/2015",
+                "location": "Home",
+                "opponent": "California",
+                "time": "TBA",
+                "results": ""
+            },
+            {
+                "date": "10/08/2015",
+                "location": "Away",
+                "opponent": "USC",
+                "time": "TBA",
+                "results": ""
+            },
+            {
+                "date": "10/17/2015",
                 "location": "Home",
                 "opponent": "Oregon",
-                "time": "7:00",
-                "results": "45-0"
+                "time": "TBA",
+                "results": ""
+            },
+            {
+                "date": "10/24/2015",
+                "location": "Away",
+                "opponent": "Stanford",
+                "time": "TBA",
+                "results": ""
+            },
+            {
+                "date": "10/31/2015",
+                "location": "Home",
+                "opponent": "Arizona",
+                "time": "TBA",
+                "results": ""
+            },
+            {
+                "date": "11/07/2015",
+                "location": "Home",
+                "opponent": "Utah",
+                "time": "TBA",
+                "results": ""
+            },
+            {
+                "date": "11/14/2015",
+                "location": "Away",
+                "opponent": "Arizona State",
+                "time": "TBA",
+                "results": ""
+            },
+            {
+                "date": "11/21/2015",
+                "location": "Home",
+                "opponent": "Oregon State",
+                "time": "TBA",
+                "results": ""
+            },
+            {
+                "date": "11/27/2015",
+                "location": "Home",
+                "opponent": "Washington State",
+                "time": "TBA",
+                "results": ""
             }
         ]
     },
     {
-        "sport": "Baseball",
-        "record": "11-5",
-        "roster": [
-            {
-                "student": "Michael Yslas",
-                "position": "LF",
-                "number": "#1",
-                "height": "5'6"
-            },
-            {
-                "student": "Robinson Cano ",
-                "position": "2B",
-                "number": "#22",
-                "height": "5'10"
-            },
-            {
-                "student": "Felix Hernandez",
-                "position": "SP",
-                "number": "#34",
-                "height": "5'6"
-            },
-            {
-                "student": "Michael Yslas",
-                "position": "C",
-                "number": "#23",
-                "height": "5'6"
-            },
-            {
-                "student": "Michael Yslas",
-                "position": "C",
-                "number": "#23",
-                "height": "5'6"
-            }
-        ],
-        "schedule": [
-            {
-                "date": "3/3/19",
-                "location": "Home",
-                "opponent": "Oregon",
-                "time": "7:00",
-                "results": "45-0"
-            },
-            {
-                "date": "3/3/19",
-                "location": "Home",
-                "opponent": "Oregon",
-                "time": "7:00",
-                "results": "45-0"
-            },
-            {
-                "date": "3/3/19",
-                "location": "Home",
-                "opponent": "Oregon",
-                "time": "7:00",
-                "results": "45-0"
-            }
-        ]
-    }
+    "sport": "Baseball",
+    "record": "11-5",
+    "headCoach": "Lindsay Meggs",
+    "roster": [
+        {
+            "student": "Chris Baker",
+            "position": "INF",
+            "number": "#6",
+            "height": "6'0",
+            "year": "Sophomore"
+        },
+        {
+            "student": "Henry Baker",
+            "position": "P",
+            "number": "#32",
+            "height": "6'2",
+            "year": "Sophomore"
+        },
+        {
+            "student": "Will Ballowe",
+            "position": "P",
+            "number": "#15",
+            "height": "6'5",
+            "year": "Junior"
+        },
+        {
+            "student": "Branden Berry",
+            "position": "IF/OF",
+            "number": "#36",
+            "height": "6'4",
+            "year": "Junior"
+        },
+        {
+            "student": "Mitch Bevacqua",
+            "position": "OF",
+            "number": "#9",
+            "height": "5'10",
+            "year": "Freshman"
+        },
+        {
+            "student": "Braden Bishop",
+            "position": "OF",
+            "number": "#7",
+            "height": "6'1",
+            "year": "Junior"
+        },
+        {
+            "student": "Zach Bonneau",
+            "position": "C",
+            "number": "#25",
+            "height": "6'1",
+            "year": "Sophomore"
+        },
+        {
+            "student": "KJ Brady",
+            "position": "OF",
+            "number": "#1",
+            "height": "5'11",
+            "year": "Freshman"
+        },
+        {
+            "student": "Noah Bremer",
+            "position": "RHP",
+            "number": "#17",
+            "height": "6'4",
+            "year": "Freshman"
+        },
+        {
+            "student": "Brandon Choate",
+            "position": "P",
+            "number": "#16",
+            "height": "6'4",
+            "year": "Senior"
+        },
+        {
+            "student": "Andy Cosgrove",
+            "position": "C",
+            "number": "#35",
+            "height": "6'2",
+            "year": "Freshman"
+        },
+        {
+            "student": "Josh Cushing",
+            "position": "INF",
+            "number": "#12",
+            "height": "6'0",
+            "year": "Sophomore"
+        },
+        {
+            "student": "Tyler Davis",
+            "position": "P",
+            "number": "#19",
+            "height": "5'10",
+            "year": "Senior"
+        },
+        {
+            "student": "Toby Dunlap",
+            "position": "RHP",
+            "number": "#30",
+            "height": "6'5",
+            "year": "Freshman"
+        },
+        {
+            "student": "Joshua Fredendall",
+            "position": "P",
+            "number": "#43",
+            "height": "6'5",
+            "year": "Senior"
+        },
+        {
+            "student": "Mack Gaul",
+            "position": "P",
+            "number": "#33",
+            "height": "6'0",
+            "year": "Freshman"
+        }
+    ],
+    "schedule": [
+        {
+            "date": "02/13/2015",
+            "location": "Away",
+            "opponent": "Pacific",
+            "time": "6:00",
+            "results": "W 5-2"
+        },
+        {
+            "date": "02/14/2015",
+            "location": "Away",
+            "opponent": "Pacific",
+            "time": "2:00",
+            "results": "W 7-4"
+        },
+        {
+            "date": "02/15/2015",
+            "location": "Away",
+            "opponent": "Pacific",
+            "time": "1:00",
+            "results": "W 4-0"
+        },
+        {
+            "date": "02/19/2015",
+            "location": "Away",
+            "opponent": "Pac-12 vs Big-12 vs Kansas",
+            "time": "12:00",
+            "results": "L 12-1"
+        },
+        {
+            "date": "02/20/2015",
+            "location": "Away",
+            "opponent": "Pac-12 vs Big-12 vs Oklahoma",
+            "time": "12:00",
+            "results": "L 5-2"
+        },
+        {
+            "date": "02/21/2015",
+            "location": "Away",
+            "opponent": "Pac-12 vs Big-12 vs Kansas St.",
+            "time": "3:30",
+            "results": "W 6-5"
+        },
+        {
+            "date": "02/22/2015",
+            "location": "Away",
+            "opponent": "Pac-12 vs Big-12 vs Oklahoma St.",
+            "time": "10:00",
+            "results": "L 12-2"
+        },
+        {
+            "date": "02/25/2015",
+            "location": "Home",
+            "opponent": "Portland",
+            "time": "5:00",
+            "results": "W 6-0"
+        }
+    ]
+}
 ]

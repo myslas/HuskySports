@@ -75,6 +75,9 @@ public class MySingleton implements SportsRepository {
                     if (temp.equals("record")) {
                         uw.setRecord(reader.nextString());
                     }
+                    if (temp.equals("headCoach")) {
+                        uw.setCoach(reader.nextString());
+                    }
                     if (temp.equals("roster")) {
                         ArrayList<Roster> roster = new ArrayList<Roster>();
                         reader.beginArray();
@@ -89,8 +92,10 @@ public class MySingleton implements SportsRepository {
                                     r.setPosition(reader.nextString());
                                 } else if (next.equals("number")) {
                                     r.setNumber(reader.nextString());
-                                } else {
+                                } else if (next.equals("height")) {
                                     r.setHeight(reader.nextString());
+                                } else {
+                                    r.setYear(reader.nextString());
                                 }
                             }
                             reader.endObject();

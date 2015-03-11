@@ -48,18 +48,22 @@ public class Sport extends ActionBarActivity {
         });
         sportName.setText(name);
         TextView record = (TextView) findViewById(R.id.Record);
+        TextView coach = (TextView) findViewById(R.id.coach);
         final ArrayList<Roster> roster;
         final ArrayList<UWsports> uwsports = MySingleton.getInstance().getElements(getApplication().getApplicationContext());
         Log.i(TAG, "" + uwsports);
         if (name.equals("Baseball")) {
             roster = uwsports.get(2).getRoster();
             record.setText("Record: " + uwsports.get(2).getRecord());
+            coach.setText("Coach: " + uwsports.get(2).getCoach());
         } else if (name.equals("Basketball")) {
             roster = uwsports.get(0).getRoster();
             record.setText("Record: " + uwsports.get(0).getRecord());
+            coach.setText("Coach: " + uwsports.get(0).getCoach());
         } else {
             roster = uwsports.get(1).getRoster();
             record.setText("Record: " + uwsports.get(1).getRecord());
+            coach.setText("Coach: " + uwsports.get(1).getCoach());
         }
 
 
@@ -100,6 +104,7 @@ public class Sport extends ActionBarActivity {
                 nextActivity.putExtra("position", roster.get(position).getPosition());
                 nextActivity.putExtra("number", roster.get(position).getNumber());
                 nextActivity.putExtra("height", roster.get(position).getHeight());
+                nextActivity.putExtra("year", roster.get(position).getYear());
                 startActivity(nextActivity);
             }
         });

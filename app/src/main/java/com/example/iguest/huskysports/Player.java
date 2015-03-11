@@ -25,6 +25,7 @@ public class Player extends ActionBarActivity {
         String position = intent.getStringExtra("position");
         String number = intent.getStringExtra("number");
         String height = intent.getStringExtra("height");
+        String year = intent.getStringExtra("year");
 
         TextView sportTV = (TextView) findViewById(R.id.sport);
         sportTV.setText("Sport: " + sport);
@@ -36,6 +37,8 @@ public class Player extends ActionBarActivity {
         numberTV.setText("Number: " + number);
         TextView heightTV = (TextView) findViewById(R.id.height);
         heightTV.setText("Height: " + height);
+        TextView yearTV = (TextView) findViewById(R.id.year);
+        yearTV.setText("Year: " + year);
         ImageView image = (ImageView) findViewById(R.id.imageView2);
         if (sport.equals("Baseball")) {
             image.setImageResource(R.drawable.baseball);

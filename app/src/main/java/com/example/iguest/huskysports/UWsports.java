@@ -9,6 +9,7 @@ public class UWsports implements Serializable {
     private String record;
     private ArrayList<Roster> roster;
     private ArrayList schedule;
+    private String coach;
 
     public UWsports() {
         //questions = new ArrayList<Quiz>();
@@ -26,6 +27,8 @@ public class UWsports implements Serializable {
 
     public ArrayList<Schedule> getSchedule() {return schedule; }
 
+    public String getCoach() { return coach; }
+
     public void setSportName(String title) {
         this.sportName = title;
     }
@@ -37,6 +40,8 @@ public class UWsports implements Serializable {
     public void setSchedule(ArrayList<Schedule> s) {this.schedule = s; }
 
     public void setRecord(String s) { this.record = s; }
+
+    public void setCoach(String s) { this.coach = s; }
 
 
 }
