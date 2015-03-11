@@ -22,6 +22,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import java.io.File;
@@ -33,6 +35,7 @@ public class Preferences extends ActionBarActivity {
     CheckBox baseball;
     CheckBox basketball;
     CheckBox football;
+    Switch notifications;
     private DownloadManager dm;
     String Download_ID = "DOWNLOAD_ID";
 
@@ -42,9 +45,38 @@ public class Preferences extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preferences);
 
+        notifications = (Switch) findViewById(R.id.switch1);
         baseball = (CheckBox) findViewById(R.id.baseball);
         basketball = (CheckBox) findViewById(R.id.basketball);
         football = (CheckBox) findViewById(R.id.football);
+
+        if (!notifications.isChecked()) {
+            baseball.setEnabled(false);
+            basketball.setEnabled(false);
+            football.setEnabled(false);
+        } else {
+            baseball.setEnabled(true);
+            basketball.setEnabled(true);
+            football.setEnabled(true);
+        }
+
+        notifications.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (!notifications.isChecked()) {
+                    baseball.setEnabled(false);
+                    basketball.setEnabled(false);
+                    football.setEnabled(false);
+                } else {
+                    baseball.setEnabled(true);
+                    basketball.setEnabled(true);
+                    football.setEnabled(true);
+                }
+
+            }
+        });
+
+
 
         loadSavedPreferences();
 
@@ -205,6 +237,7 @@ public class Preferences extends ActionBarActivity {
         savePreferences("baseball", baseball.isChecked());
         savePreferences("basketball", basketball.isChecked());
         savePreferences("football", football.isChecked());
+        savePreferences("switch", notifications.isChecked());
     }
 
     @Override
@@ -226,5 +259,6 @@ public class Preferences extends ActionBarActivity {
         baseball.setChecked(sharedPreferences.getBoolean("baseball", false));
         basketball.setChecked(sharedPreferences.getBoolean("basketball", false));
         football.setChecked(sharedPreferences.getBoolean("football", false));
+        notifications.setChecked(sharedPreferences.getBoolean("switch", false));
     }
 }

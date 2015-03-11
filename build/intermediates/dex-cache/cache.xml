@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="/Users/iguest/AndroidStudioProjects/HuskySports/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/iguest/AndroidStudioProjects/HuskySports/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-20f7fa64b0c03220ba249ea0d36d7e88800b3c9e.jar" />
-    </item>
-    <item
-        jar="/Users/iguest/AndroidStudioProjects/HuskySports/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jar="/Users/baseballkid-88/AndroidStudioProjects/HuskySports/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Users/iguest/AndroidStudioProjects/HuskySports/app/build/intermediates/pre-dexed/debug/classes-44969f442c956f72303096ca3bfe1227112386ce.jar" />
+        <dex dex="/Users/baseballkid-88/AndroidStudioProjects/HuskySports/app/build/intermediates/pre-dexed/debug/classes-10b79f7d270d061ef89ec07f99a75e0bdd2ac03c.jar" />
     </item>
     <item
-        jar="/Users/iguest/AndroidStudioProjects/HuskySports/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/iguest/AndroidStudioProjects/HuskySports/app/build/intermediates/pre-dexed/debug/classes-af0f2177147e00c5d0a63b92cd0727acf9162c49.jar" />
-    </item>
-    <item
-        jar="/Users/iguest/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jar="/Users/baseballkid-88/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/iguest/AndroidStudioProjects/HuskySports/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-4af7d6332c26af2f77965e6927554b935e27e503.jar" />
+        <dex dex="/Users/baseballkid-88/AndroidStudioProjects/HuskySports/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-d8feb6a1efdef80820b84ec75d0ce0ef688bf10f.jar" />
+    </item>
+    <item
+        jar="/Users/baseballkid-88/AndroidStudioProjects/HuskySports/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/baseballkid-88/AndroidStudioProjects/HuskySports/app/build/intermediates/pre-dexed/debug/classes-5c1bc63d9feaab43b9ea329a770a5dea6afa3645.jar" />
+    </item>
+    <item
+        jar="/Users/baseballkid-88/AndroidStudioProjects/HuskySports/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/baseballkid-88/AndroidStudioProjects/HuskySports/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-bef521df70a78e750ccfe5b770d1aa52675535ef.jar" />
     </item>
 
 </items>
