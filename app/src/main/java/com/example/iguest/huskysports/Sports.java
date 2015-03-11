@@ -106,7 +106,7 @@ public class Sports extends ActionBarActivity {
 
                     if (today.equals(date)) {
                         String msg = "There is a " + uwsports.get(i).getSportName() + " game today, " + str + ", at " + uwsports.get(i).getSchedule().get(j).getTime() + " against " + uwsports.get(i).getSchedule().get(j).getOpponent() + "!";
-                        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
                         Log.i("getDates", "sent sms");
                     }
                 } catch (ParseException e1) {
