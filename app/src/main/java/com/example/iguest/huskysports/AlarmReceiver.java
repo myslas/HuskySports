@@ -46,19 +46,9 @@ public class AlarmReceiver extends BroadcastReceiver {
                             "update3.json");
 
             File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-            File direct = new File(Environment.DIRECTORY_DOWNLOADS);
             File file = new File(path, "update3.json");
-            if (!direct.exists()) {
-                if (file.exists()) {
-                    context.deleteFile("update3.json");
-                    try {
-                        FileOutputStream out = new FileOutputStream(file);
-                        out.flush();
-                        out.close();
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
+            if (file.exists()){
+                file.delete();
             }
 
             long download_id = dm.enqueue(request);
