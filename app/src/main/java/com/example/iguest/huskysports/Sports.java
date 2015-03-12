@@ -31,12 +31,8 @@ public class Sports extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sports);
 
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        Log.i(TAG, "" + sharedPreferences.getBoolean("baseball", false));
-        Log.i(TAG, "" + sharedPreferences.getBoolean("basketball", false));
-        Log.i(TAG, "" + sharedPreferences.getBoolean("football", false));
-        Log.i(TAG, "" + sharedPreferences.getBoolean("notifications", false));
-        runAlerts();
+
+
 
         final ListView listView = (ListView) findViewById(R.id.listView);
 
@@ -85,34 +81,5 @@ public class Sports extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void runAlerts() {
-        final ArrayList<UWsports> uwsports = MySingleton.getInstance().getElements(getApplicationContext());
 
-        String s;
-        Calendar c = Calendar.getInstance();
-        SimpleDateFormat df = new SimpleDateFormat("MM/dd/yyyy");
-        String formattedDate = df.format(c.getTime());
-
-
-        for (int i = 0; i < uwsports.size(); i++) {
-            for (int j = 0; j < uwsports.get(i).getSchedule().size(); j++) {
-                try {
-                    String str = uwsports.get(i).getSchedule().get(j).getDate();
-
-                    Date today = df.parse(formattedDate);
-                    Log.i("getDates", "today: " + today.toString());
-                    Date date = df.parse(str);
-                    Log.i("getDates", "date: " + date.toString());
-
-                    if (today.equals(date)) {
-                        String msg = "There is a " + uwsports.get(i).getSportName() + " game today, " + str + ", at " + uwsports.get(i).getSchedule().get(j).getTime() + " against " + uwsports.get(i).getSchedule().get(j).getOpponent() + "!";
-                        Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
-                        Log.i("getDates", "sent sms");
-                    }
-                } catch (ParseException e1) {
-                    e1.printStackTrace();
-                }
-            }
-        }
-    }
 }

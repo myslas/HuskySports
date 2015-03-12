@@ -46,6 +46,13 @@ public class Sport extends ActionBarActivity {
                 startActivity(nextActivity);
             }
         });
+        Button b2 = (Button) findViewById(R.id.back);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Sport.this, Sports.class));
+            }
+        });
         sportName.setText(name);
         TextView record = (TextView) findViewById(R.id.Record);
         TextView coach = (TextView) findViewById(R.id.coach);

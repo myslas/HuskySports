@@ -54,7 +54,7 @@ public class MySingleton implements SportsRepository {
         ArrayList<UWsports> UWsportss = new ArrayList<UWsports>();
         File path = Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_DOWNLOADS);
-        File file = new File(path, "update2.json");
+        File file = new File(path, "update3.json");
 
         try {
             String json = "";

@@ -41,6 +41,13 @@ public class ScheduleActivity extends ActionBarActivity {
                 startActivity(nextActivity);
             }
         });
+        Button b2 = (Button) findViewById(R.id.back);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ScheduleActivity.this, Sports.class));
+            }
+        });
         TextView record = (TextView) findViewById(R.id.Record);
         TextView coach = (TextView) findViewById(R.id.coach);
         final ArrayList<UWsports> uwsports = MySingleton.getInstance().getElements(getApplication().getApplicationContext());
